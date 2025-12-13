@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Calculator</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body{
+            background-color: rgb(162, 222, 215);
+            padding: 20px;
+
+        }
+        
+        input{
+            margin: 5px;
+            padding: 8px;
+        }
+        button{
+            background-color: rgb(140, 165, 165);
+            padding: 8px 15px;
+            margin-top: 10px;
+        }
+        #output{
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid black;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Marks Calculator</h2>
+
+    <label>Subject 1: </label>
+    <input type="number" id="sub1"><br>
+
+    <label>Subject 2: </label>
+    <input type="number" id="sub2"><br>
+
+    <label>Subject 3: </label>
+    <input type="number" id="sub3"><br>
+
+    <label>Subject 4: </label>
+    <input type="number" id="sub4"><br>
+
+    <label>Subject 5: </label>
+    <input type="number" id="sub5"><br>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <div id="output"></div>
+
+    <script>
+        function calculate() {
+
+            // Variables to store marks
+            let m1 = Number(document.getElementById("sub1").value);
+            let m2 = Number(document.getElementById("sub2").value);
+            let m3 = Number(document.getElementById("sub3").value);
+            let m4 = Number(document.getElementById("sub4").value);
+            let m5 = Number(document.getElementById("sub5").value);
+
+            // Function to calculate total
+            function getTotal(a, b, c, d, e) {
+                return a + b + c + d + e;
+            }
+
+            // Total
+            let total = getTotal(m1, m2, m3, m4, m5);
+
+            // Average
+            let avg = total / 5;
+
+            // Grade calculation
+            let grade = "";
+            if (avg >= 75) grade = "A";
+            else if (avg >= 60) grade = "B";
+            else if (avg >= 50) grade = "C";
+            else grade = "Fail";
+
+            // Object to store all details
+            let student = {
+                marks: [m1, m2, m3, m4, m5],
+                total: total,
+                average: avg.toFixed(2),
+                grade: grade
+            };
+
+            // Display using innerHTML
+            document.getElementById("output").innerHTML = `
+                <h3>Result</h3>
+                Marks: ${student.marks.join(", ")} <br>
+                Total: ${student.total} <br>
+                Average: ${student.average} <br>
+                Grade: ${student.grade}
+            `;
+        }
+    </script>
+
+</body>
+</html>

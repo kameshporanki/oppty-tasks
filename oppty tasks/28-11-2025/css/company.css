@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #9bd2e5, #84b7d2, #22b8d3);
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 70px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.logo {
+  width: 45px;
+  height: auto;
+}
+
+.logo-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  font-size: 14px;
+}
+
+/* Buttons */
+.btn {
+  border: none;
+  cursor: pointer;
+  border-radius: 999px;
+  padding: 10px 22px;
+  font-size: 14px;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 3px solid #ff6e35;
+  color: #fff;
+}
+
+.btn-outline:hover {
+  background: #4f46e5;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.4);
+}
+
+.btn-primary {
+  background: #f47754;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #4338ca;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.5);
+}
+
+/* Sections */
+section {
+    padding: 50px 10%;
+}
+
+h2 {
+    font-size: 32px;
+    color: #0d1b2a;
+    margin-bottom: 20px;
+}
+
+/* Text Sections */
+.about p,
+.mission p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #333;
+}
+
+/* Services Section */
+.service-boxes {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: #0c0d0d;
+    border-right: 5px solid #e80719;
+    padding: 20px;
+    flex: 1 1 30%;
+    border-radius: 6px;
+    min-width: 250px;
+}
+
+.box h3 {
+    color: #968f56;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+    background: #0d1b2a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 16px;
+}

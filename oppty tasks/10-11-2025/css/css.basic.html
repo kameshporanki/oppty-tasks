@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3Star Hotels</title>
+<link rel="stylesheet" href="C:\Users\DELL\Desktop\css\css basic.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.4;
+            color: #494848;
+            background-color: #9dc8f2;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #acabaa 0%, #a5ae52 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+        }
+        
+        .main-content {
+            flex: 3;
+            min-width: 300px;
+        }
+        
+        .sidebar {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        article {
+            background: rgb(238, 248, 177);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        article h2 {
+            color: #121212;
+            margin-bottom: 1rem;
+        }
+        
+        article p {
+            margin-bottom: 1rem;
+        }
+        
+        .meta {
+            font-size: 0.9rem;
+            color: #b6b3b3;
+            margin-bottom: 1rem;
+        }
+        
+        .sidebar-widget {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .tag {
+            background: #ecb256;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #000000;
+            color: rgb(136, 134, 134);
+            margin-top: 2rem;
+            border-radius: 10px;
+        }
+        
+        /* Responsive Design */
+        @media screen and (max-width: 700px) {
+            .container {
+                padding: 10px;
+            }
+            
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .content-wrapper {
+                flex-direction: column;
+            }
+            
+            article, .sidebar-widget {
+                padding: 1rem;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            header {
+                padding: 1rem 0;
+            }
+            
+            header h1 {
+                font-size: 1.5rem;
+            }
+            
+            header p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lemon Tree Hotel</h1>
+            <p>Luxurious Stay</p>
+        </header>
+        
+        <div class="content-wrapper">
+            <main class="main-content">
+                <article>
+                    <h2>We Providing the Comfortable stay with Hygenic Maintainance; Symbols</h2>
+                    <div class="meta">
+                        <span>November 10, 2025</span> &nbsp;&nbsp; </div>
+                        
+                
+                    <p>Offering free break fast</p>
+                    
+                    <p>Including:</p>
+                    <ul>
+                        <li>Break fast</li>
+                        <li>gymk</li>
+                        <li>spa</li>
+                        
+                    </ul>
+                    
+                
+                </article>
+                
+                <article>
+                    <h3>Mandatory</h3>
+                    <div class="meta">
+                        <span>Proofs</span> &nbsp;&nbsp; 
+                        
+                    </div>
+                    <p>Responsibities of you have to maintain:</p>
+                    
+                    <ol>
+                        <li><strong>Luggage</strong> &ndash; you only responsible for your luggage</li>
+                        <li><strong>Damage</strong> &ndash; Dont damage of the things in the room like Tv,Ac..</li>
+                        <li><strong>Extra Charge</strong> &ndash; for the scratching on the walls and sanitory</li></ol>
+                        </article>
+                        </main>
+              
+                        <aside class="sidebar">
+                <div class="sidebar-widget">
+                    <h4>About the Hotel</h4>
+                    <p>This Branding Hotel all over India,and also planning to launched in Qatar,malaysia for this Newyear.</p>
+                </div>
+                
+                <div class="sidebar-widget">
+                    <h3>Specialities</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid #eee;">
+                            <a href="#" style="text-decoration: none; color: #667eea;">&rarr; Beach view with open lounge</a>
+                        </li>
+                        <li style="margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid #eee;">
+                            <a href="#" style="text-decoration: none; color: #667eea;">&rarr; Swimming pool facility</a>
+                        </li>
+                        <li style="margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid #eee;">
+                            <a href="#" style="text-decoration: none; color: #667eea;">&rarr; Outside food not allowed</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                
+                
+                <div class="sidebar-widget">
+                    <h4>Visit Again</h4>
+                    <p>Get offers for the next stay</p>
+                    <form style="margin-top: 15px;">
+                        <input type="name" placeholder="Your name" style="width: 75%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                        <button type="submit" style="width: 75%; padding: 10px; background: #667eea; color: white; border: none; border-radius: 5px; cursor: pointer;">Thank you</button>
+                    </form>
+                </div>
+            </aside>
+        </div>
+        
+        <footer>
+            <p>Most famous Hotels in India; <a href="#" style="color: white;">Privacy Policy</a> &bull; <a href="#" style="color: white;">Terms</a></p>
+            <p>Have a great day</p>
+        </footer>
+    </div>
+</body>
+</html>          
+                    
+                    
+                    
+                  
+
+                
+            
+            
+        

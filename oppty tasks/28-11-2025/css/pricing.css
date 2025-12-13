@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(207, 216, 169);
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 70px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.logo {
+  width: 45px;
+  height: auto;
+}
+
+.logo-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #111111;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  font-size: 14px;
+}
+
+/* Buttons */
+.btn {
+  border: none;
+  cursor: pointer;
+  border-radius: 200px;
+  padding: 10px 22px;
+  font-size: 14px;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 3px solid #ff6e35;
+  color: #fff;
+}
+
+.btn-outline:hover {
+  background: #4f46e5;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.4);
+}
+
+.btn-primary {
+  background: #f47754;
+  color: #e8eae8;
+}
+
+.btn-primary:hover {
+  background: #4338ca;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.5);
+}
+/* Background Section */
+.pricing-header {
+    background-image: url("bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 120px 20px;
+    color: rgb(121, 99, 99);
+    backdrop-filter: blur(2px);
+}
+
+.pricing-header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.pricing-header p {
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+/* Container */
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 5%;
+    flex-wrap: wrap;
+}
+
+/* Pricing Cards */
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    width: 320px;
+    padding: 30px;
+    text-align: center;
+    color: #747272;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #00aaff;
+}
+
+/* Popular Card */
+.popular {
+    border: 2px solid #00aaff;
+    box-shadow: 0px 0px 15px rgba(0, 170, 255, 0.5);
+}
+
+.tag {
+    background: #00aaff;
+    color: rgb(95, 92, 92);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+/* Headings */
+.card h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.card h3 span {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+/* List */
+.card ul {
+    list-style: none;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.card ul li {
+    font-size: 16px;
+    padding: 6px 0;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #00aaff;
+    color: rgb(113, 108, 108);
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0088cc;
+}

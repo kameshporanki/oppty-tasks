@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Page</title>
+
+
+    <style>
+        * {
+            padding: 0;
+            margin: 100;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+h1 {
+    color: #86eb14;
+    text-align: center;
+    border-bottom: 2px solid #ff6b6b;
+    padding-bottom: 10px;
+}
+
+p {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    background-color: #ffeb3b;
+    padding: 5px;
+}
+/* Element selectors */
+h1 {
+    color: #2d32bf;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Class selectors */
+.highlight {
+    background-color: #ffeb3b;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.button {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #ee5a24;
+}
+
+/* ID selector */
+#main-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Universal selector */
+* {
+    box-sizing: border-box;
+}
+
+/* Grouped selectors */
+h2, h3 {
+    color: #ee5a24;
+    margin-top: 25px;
+}
+
+/* Element selectors */
+h1 {
+    color: #ff6b6b;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Class selectors */
+.highlight {
+    background-color: #ffeb3b;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.button {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.button:hover {
+    background-color: #ee5a24;
+}
+
+/* ID selector */
+#main-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Descendant selector */
+div p {
+    font-style: italic;
+}
+
+/* Child selector */
+.container > p {
+    font-weight: bold;
+}
+
+/* Adjacent sibling selector */
+h2 + p {
+    color: #ee5a24;
+}
+
+/* Attribute selector */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Pseudo-class selectors */
+.button:active {
+    transform: translateY(2px);
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Pseudo-element selectors */
+.quote::before {
+    content: """;
+    font-size: 2em;
+    color: #ff6b6b;
+}
+
+.quote::after {
+    content: """;
+    font-size: 2em;
+    color: #ff6b6b;
+}
+     
+/* Named colors */
+.named-colors {
+    background-color: lightblue;
+    color: darkblue;
+    border: 2px solid navy;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Hexadecimal colors */
+.hex-colors {
+    background-color: #ff6b6b;
+    color: #ffffff;
+    border: 2px solid #ee5a24;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* RGB colors */
+.rgb-colors {
+    background-color: rgb(106, 127, 234);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(70, 90, 200);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* RGBA colors with transparency */
+.rgba-colors {
+    background-color: rgba(255, 107, 107, 0.7);
+    color: rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(238, 90, 36, 0.9);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* HSL colors */
+.hsl-colors {
+    background-color: hsl(270, 60%, 70%);
+    color: hsl(0, 0%, 20%);
+    border: 2px solid hsl(270, 60%, 50%);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* HSLA colors with transparency */
+.hsla-colors {
+    background-color: hsla(120, 100%, 50%, 0.6);
+    color: hsla(0, 0%, 0%, 0.9);
+    border: 2px solid hsla(120, 100%, 30%, 0.8);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Transparent and currentColor */
+.transparent-example {
+    background-color: transparent;
+    color: #ff6b6b;
+    border: 2px solid currentColor;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Gradient example */
+.gradient-example {
+    background: linear-gradient(135deg, #ff6b6b, #ee5a24, #333);
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Background color examples */
+.color-bg {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.transparent-bg {
+    background-color: transparent;
+    border: 2px dashed #ff6b6b;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.gradient-bg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Background image examples */
+.image-bg {
+    background-image: url("https://via.placeholder.com/100x100/ff6b6b/ffffff?text=BG");
+    background-repeat: repeat;
+    padding: 30px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-height: 150px;
+}
+
+.no-repeat-bg {
+    background-image: url("https://via.placeholder.com/100x100/ee5a24/ffffff?text=BG");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-height: 150px;
+}
+
+.cover-bg {
+    background-image: url("https://via.placeholder.com/300x200/667eea/ffffff?text=Cover");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    min-height: 200px;
+}
+
+/* Fixed background */
+.fixed-bg {
+    background-image: url("https://via.placeholder.com/200x200/764ba2/ffffff?text=Fixed");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Multiple backgrounds */
+.multiple-bg {
+    background-image: 
+        url("https://via.placeholder.com/50x50/ff6b6b/ffffff?text=1"),
+        url("https://via.placeholder.com/50x50/ee5a24/ffffff?text=2");
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    padding: 50px 20px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-height: 200px;
+}
+
+/* Different border styles */
+.dotted-border {
+    border: 3px dotted #ff6b6b;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.dashed-border {
+    border: 3px dashed #ee5a24;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.solid-border {
+    border: 3px solid #667eea;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.double-border {
+    border: 6px double #764ba2;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.groove-border {
+    border: 5px groove #ff6b6b;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.ridge-border {
+    border: 5px ridge #ee5a24;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.inset-border {
+    border: 5px inset #667eea;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.outset-border {
+    border: 5px outset #764ba2;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Different border widths */
+.thin-border {
+    border: thin solid #333;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.medium-border {
+    border: medium solid #333;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.thick-border {
+    border: thick solid #333;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.specific-width {
+    border: 8px solid #ff6b6b;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Individual side borders */
+.top-only {
+    border-top: 5px solid #ff6b6b;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.right-only {
+    border-right: 5px solid #ee5a24;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.bottom-only {
+    border-bottom: 5px solid #667eea;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.left-only {
+    border-left: 5px solid #764ba2;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+/* Rounded corners */
+.rounded-box {
+    border: 3px solid #ff6b6b;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.circle-box {
+    border: 3px solid #ee5a24;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.oval-box {
+    border: 3px solid #667eea;
+    border-radius: 50px/25px;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.irregular-rounded {
+    border: 3px solid #764ba2;
+    border-radius: 10px 30px 5px 40px;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+/* Complex border example */
+.complex-border {
+    border: 5px solid;
+    border-image: linear-gradient(135deg, #ff6b6b, #ee5a24) 1;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+</style>
+</head>
+<body>
+<div id="main-content">
+        <h1>CSS Demopage</h1>
+        <p>This page shows different <span class="highlight">CSS selectors</span> and styles.</p>
+
+        <button class="button">Hover Me</button>
+        <button class="button">Click Me</button>
+
+        <h2>Color Examples</h2>
+        <div class="named-colors">Named colors</div>
+        <div class="hex-colors">Hexadecimal colors</div>
+        <div class="rgb-colors">RGB colors</div>
+        <div class="rgba-colors">RGBA colors</div>
+        <div class="hsl-colors">HSL colors</div>
+        <div class="hsla-colors">HSLA colors</div>
+        <div class="gradient-example">Linear Gradient</div>
+
+        <h2>Border & Shape Examples</h2>
+        <div class="solid-border">Solid Border</div>
+        <div class="rounded-box">Rounded Corners</div>
+        <div class="circle-box">Circle</div>
+        <div class="complex-border">Complex Gradient Border</div>
+
+
+        
+    </div>
+
+</body>
+</html>

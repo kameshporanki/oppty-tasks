@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <header style="background-color: #a0abed; color: white; padding: 20px; text-align: center;">
+          <h1>Holiday Plans</h1>
+ <nav>
+     <ul style="list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: center; gap: 25px;">
+        <li><a href="#" style="color: rgb(41, 69, 94); text-decoration: none;">Home</a></li>
+        <li><a href="#" style="color: rgb(41, 69, 94); text-decoration: none;">Kerala</a></li>
+        <li><a href="#" style="color: rgb(41, 69, 94); text-decoration: none;">Cochin</a></li>
+        <li><a href="#" style="color: rgb(41, 69, 94); text-decoration: none;">Goa</a></li></ul>
+    </nav>
+</header>
+<main style="display:flex; padding: 15; gap: 15;">
+    <section style="flex: 2;">
+            <article style="margin-bottom: 20px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                <header>
+                    <h2>New Packages</h2>
+                    <p>From <time datetime="2025-11-02">November 02, 2025</time></p>
+                </header>
+<p>including Flights and Hotels </P>
+    <figure style="margin: 30px;">
+        <img src="https://www.atlastravels.com/famous-tourist-places-to-visit-in-india-/" alt="MY Holiday" style="width: 10%; border-radius: 5px;">
+        <figcaption>Must Visit</figcaption>
+    </figure>
+    <p>Offer for these places only <mark>Kerala</mark>, <mark>Cochin</mark>, <mark>Goa</mark>,etc.</p>
+            </article></section>
+            <aside style="flex: 1; background-color: #a7a6b3; padding: 15px; border-radius: 3px;">
+                <h3>Best Trip Package</h3>
+            <ul style="list-style-type: none; padding: 0;">
+                <li style="margin-bottom: 10px;"><a href="#" style="text-decoration: none; color: #1f1242;">FLights</a></li>
+                <li style="margin-bottom: 10px;"><a href="#" style="text-decoration: none; color: #1f1242;">Trains</a></li>
+                <li style="margin-bottom: 10px;"><a href="#" style="text-decoration: none; color: #1f1242;">Buses</a></li>
+            </ul>
+      <form>
+                <input type="Iteml" placeholder="Your name" style="width: 25%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 3px;">
+                <button type="submit" style="width: 50%; padding: 10px; background-color: #dcd061; color: white; border: none; border-radius: 3px; cursor: pointer;">Happy Journey</button>
+            </form>
+        </aside>
+    </main>
+    
+    <footer style="background-color: #000000; color: white; text-align: center; padding: 20px;">
+        <p>Enjoy every day with beautiful places</p>
+        <address>
+            Contact: <a href="Holidayplans.com" style="color: white;">info@mytripplans.com</a>
+        </address>
+    </footer>
+</body>
+
+
+
+

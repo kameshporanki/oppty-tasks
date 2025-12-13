@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Blog with Entities</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .main-content {
+            flex: 3;
+            min-width: 300px;
+        }
+        
+        .sidebar {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        article {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        article h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+        
+        article p {
+            margin-bottom: 1rem;
+        }
+        
+        .meta {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        
+        .sidebar-widget {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .sidebar-widget h3 {
+            color: #764ba2;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #eee;
+        }
+        
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .tag {
+            background: #667eea;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #333;
+            color: white;
+            margin-top: 2rem;
+            border-radius: 10px;
+        }
+        
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .content-wrapper {
+                flex-direction: column;
+            }
+            
+            article, .sidebar-widget {
+                padding: 1rem;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            header {
+                padding: 1rem 0;
+            }
+            
+            header h1 {
+                font-size: 1.5rem;
+            }
+            
+            header p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tech Blog &trade;</h1>
+            <p>Exploring the latest in web development & technology</p>
+        </header>
+        
+        <div class="content-wrapper">
+            <main class="main-content">
+                <article>
+                    <h2>Understanding HTML Entities &amp; Symbols</h2>
+                    <div class="meta">
+                        <span>&#128197; October 21, 2025</span> &nbsp;&nbsp; 
+                        <span>&#128100; John Doe</span> &nbsp;&nbsp; 
+                        <span>&#128172; 5 Comments</span>
+                    </div>
+                    <p>HTML entities are essential for displaying special characters in web pages. Reserved characters like &lt;, &gt;, and &amp; must be encoded to display properly.</p>
+                    
+                    <p>Common entities include:</p>
+                    <ul>
+                        <li>&copy; Copyright symbol</li>
+                        <li>&reg; Registered trademark</li>
+                        <li>&trade; Trademark symbol</li>
+                        <li>&euro; Euro currency</li>
+                        <li>&pound; Pound currency</li>
+                    </ul>
+                    
+                    <p>Mathematical symbols:</p>
+                    <p>&alpha; &beta; &gamma; &delta; &epsilon;</p>
+                    <p>&times; &divide; &plusmn; &deg; &radic;</p>
+                    
+                    <p>Arrows for navigation: &larr; &uarr; &rarr; &darr;</p>
+                </article>
+                
+                <article>
+                    <h2>Responsive Web Design Best Practices</h2>
+                    <div class="meta">
+                        <span>&#128197; October 15, 2025</span> &nbsp;&nbsp; 
+                        <span>&#128100; Jane Smith</span> &nbsp;&nbsp; 
+                        <span>&#128172; 12 Comments</span>
+                    </div>
+                    <p>Responsive design ensures your website looks great on all devices. Key principles include:</p>
+                    
+                    <ol>
+                        <li><strong>Mobile-First Approach</strong> &ndash; Design for mobile devices first</li>
+                        <li><strong>Flexible Grids</strong> &ndash; Use relative units like percentages</li>
+                        <li><strong>Media Queries</strong> &ndash; Apply different styles for different screen sizes</li>
+                        <li><strong>Scalable Images</strong> &ndash; Use <code>max-width: 100%</code></li>
+                        <li><strong>Touch-Friendly Navigation</strong> &ndash; Ensure buttons are large enough for touch</li>
+                    </ol>
+                    
+                    <p>Essential meta tag:</p>
+                    <pre>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</pre>
+                    
+                    <p>Example media query:</p>
+                    <pre>@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+}</pre>
+                </article>
+            </main>
+            
+            <aside class="sidebar">
+                <div class="sidebar-widget">
+                    <h3>&#128100; About the Blog</h3>
+                    <p>This blog covers web development, HTML, CSS, JavaScript, and responsive design techniques.</p>
+                </div>
+                
+                <div class="sidebar-widget">
+                    <h3>&#128279; Popular Posts</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid #eee;">
+                            <a href="#" style="text-decoration: none; color: #667eea;">&rarr; HTML5 Semantic Elements</a>
+                        </li>
+                        <li style="margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid #eee;">
+                            <a href="#" style="text-decoration: none; color: #667eea;">&rarr; CSS Flexbox Guide</a>
+                        </li>
+                        <li style="margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid #eee;">
+                            <a href="#" style="text-decoration: none; color: #667eea;">&rarr; JavaScript ES6 Features</a>
+                        </li>
+                        <li>
+                            <a href="#" style="text-decoration: none; color: #667eea;">&rarr; Responsive Images</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="sidebar-widget">
+                    <h3>&#127991; Categories</h3>
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Responsive</span>
+                        <span class="tag">Web Design</span>
+                        <span class="tag">Tutorials</span>
+                    </div>
+                </div>
+                
+                <div class="sidebar-widget">
+                    <h3>&#9993; Subscribe</h3>
+                    <p>Get the latest posts delivered to your inbox.</p>
+                    <form style="margin-top: 15px;">
+                        <input type="email" placeholder="Your email" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                        <button type="submit" style="width: 100%; padding: 10px; background: #667eea; color: white; border: none; border-radius: 5px; cursor: pointer;">Subscribe &#10148;</button>
+                    </form>
+                </div>
+            </aside>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 Tech Blog. All rights reserved. &bull; <a href="#" style="color: white;">Privacy Policy</a> &bull; <a href="#" style="color: white;">Terms</a></p>
+            <p>Made with &hearts; using HTML, CSS, and &#9749; coffee</p>
+        </footer>
+    </div>
+</body>
+</html>

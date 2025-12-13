@@ -1,0 +1,186 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: white;
+            color: #333;
+        }
+
+        
+        nav {
+            background: white;
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            }
+
+        nav .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #720d5b;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin-left: 450px;
+            
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav .apply-btn {
+            padding: 10px 18px;
+            background: #2662ff;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background: #e9e9e9;
+            padding: 70px 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: #1a4fb7;
+        }
+
+        .hero-text p {
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .hero-text .btn {
+            padding: 10px 20px;
+            background: #ffb400;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        .hero img {
+            width: 500px;
+            border-radius: 10px;
+        }
+
+        
+        .programs {
+            text-align: center;
+            padding: 60px 40px;
+            background: #c2bfbf;
+        }
+
+        .programs h2 {
+            font-size: 28px;
+            margin-bottom: 40px;
+        }
+
+        .program-grid {
+            display: flex;
+            grid-template-columns: repeat (4, 1fr);
+            gap: 25px;
+            max-width: 700px;
+            margin: auto;
+        
+        }
+
+        .program-card {
+            background: white;
+            border-radius: 10px;
+            padding-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .program-card .top {
+            padding: 30px;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .engineering { background: #ff9d00; }
+        .business { background: #00b47d; }
+        .arts { background: #926bff; }
+        .four {background:#00b47d;}
+
+        .program-card .content {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .program-card .content a {
+            color: #1a4fb7;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        
+        .student-section {
+            background: #e4e4e4;
+            padding: 70px 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .student-box {
+            background: #ff4eb4;
+            color: white;
+            padding: 80px;
+            font-size: 28px;
+            font-weight: bold;
+            border-radius: 10px;
+            width: 40%;
+            text-align: center;
+        }
+
+        .campus {
+            width: 40%;
+        }
+
+        .campus h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #1a4fb7;
+        }
+
+        .campus ul {
+            line-height: 1.8;
+        }
+
+        
+        footer {
+            background: #1a4fb7;
+            color: white;
+            padding: 40px 60px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        footer h4 {
+            margin-bottom: 10px;
+        }
+
+        footer ul {
+            list-style: none;
+            line-height: 1.8;
+        }
+

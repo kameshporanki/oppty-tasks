@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my JS page</title>
+
+    <style>
+        
+        body {
+            background-color:aquamarine;
+        }
+
+       /*form*/
+        input{
+           border-radius: 10px;
+           width: 400px;
+           height: 40px;
+        }
+
+        button{
+            width: 100px; 
+            height: 30px;
+            color: white; 
+            background-color: rgb(71, 37, 144) ;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: rgb(121, 169, 224);
+            border: black;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <h2>Enter a Number</h2>
+
+    <form onsubmit="checkNumber()">
+        <input type="number" id="num" placeholder="Enter the number" required><br><br>
+        <button type="submit">Submit</button>
+        <button type="reset" onclick="Reset()">Reset</button>
+    </form>
+    
+    
+
+    <script>
+        function checkNumber() {
+            event.preventDefault();
+
+            let n = document.getElementById("num").value;
+
+            if (n % 2 == 0) {
+                document.body.style.backgroundColor = "green";
+            } else {
+                document.body.style.backgroundColor = "gray";
+            }
+        }
+        function Reset(){
+            document.body.style.backgroundColor = "white";
+        }
+        
+
+    </script>
+
+</body>
+
+</html>

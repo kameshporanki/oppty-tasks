@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Page</title>
+
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body {
+            background: white;
+        }
+
+        
+       .hero-section {
+            margin: 10px;
+            height: 100vh;
+            background: linear-gradient(135deg, #53738c, #47166f, #893760);
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            border-radius: 8px;
+            color: rgb(9, 9, 9);
+       }
+
+       .card{
+            
+            background: white;
+            width: 350px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-align: left;
+            
+        }
+
+        .card h2 {
+            text-align: center;
+            padding: 3px;
+            font-size: 24px;
+            color: #333;
+            border-bottom: #333;
+            
+        }
+            
+        .bottom-only {
+             border-bottom: 2px solid #000000;
+             padding: 1px;
+             margin: 2px;
+             box-sizing: border-box;
+        }
+
+        
+        
+        .card input{
+            width: 100%;
+            padding: 10px;
+            margin: 10px;
+            border:none;
+            border-bottom: 1px solid #999;
+            font-size: 15px;
+
+        
+ 
+        }
+
+        .signup-btn {
+            width: 100%;
+            padding: 12px;
+            background: transparent;
+            border: 2px solid #8a8a8a;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .signup-btn:hover {
+            background: #eee;
+        }
+
+        .login-text {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .login-text a {
+            color: #0066ff;
+            text-decoration: none;
+        }
+
+        .login-text a:hover {
+            text-decoration: underline;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <div class="card">
+            <h2>Register</h2>
+            <div class="bottom-only"></div>
+            <input type="text"placeholder="Name">
+            <input type="email"placeholder="Email">
+            <input type="password"placeholder="Password">
+            <input type="confirm password"placeholder="Confirm password">
+
+            <button class="signup-btn">Sign Up</button>
+            <p class="login-text">
+            Have an account? <a href="#">Login Here</a>
+        </p>
+        </div>
+  
+
+        
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First HTML Page</title>
+</head>
+<body>
+
+    
+    <h1>Welcome to HTML Basics</h1>
+    <h2>Introduction</h2>
+    <p>HTML is used to create webpages. It uses elements, tags and attributes to display content.</p>
+
+    
+    <h2>Text Formatting</h2>
+    <p>This is <b>bold</b>, <i>italic</i>, <u>underlined</u> and <mark>highlighted</mark> text.</p>
+    <p>Example of superscript: 10<sup>2</sup> and subscript: H<sub>2</sub>O</p>
+
+   
+    <h2>Links and Anchors</h2>
+    <p>Visit <a href="https://www.google.com" target="_blank">Google</a></p>
+    <a id="top"></a>
+    <p><a href="#bottom">Go to Bottom</a></p>
+
+    
+    <h2>Image Example</h2>
+    <img src="https://via.placeholder.com/250" alt="Sample Image">
+
+    
+    <h2>Audio Example</h2>
+    <audio controls>
+        <source src="sample.mp3" type="audio/mpeg">
+    </audio>
+
+    
+    <h2>Video Example</h2>
+    <video controls width="300">
+        <source src="sample.mp4" type="video/mp4">
+    </video>
+
+    
+    <h2>Lists</h2>
+    <h3>Ordered List</h3>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <h3>Unordered List</h3>
+    <ul>
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Banana</li>
+    </ul>
+
+    <h3>Description List</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+    </dl>
+
+    <p><a id="bottom"></a></p>
+    <p><a href="#top">Back to Top</a></p>
+
+</body>
+</html>

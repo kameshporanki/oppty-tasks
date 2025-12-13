@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Page</title>
+<link rel="stylesheet" href="file:///C:/Users/DELL/Desktop/oppty%20tasks/12-11-2025/css%20syntax%20selector&color%20changing/ssc.html">
+
+    <style>
+        /* Reset and base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    padding: 30px;
+}
+
+/* Main container */
+#main-content {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings and text */
+h1 {
+    text-align: center;
+    color: #ff6b6b;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #ee5a24;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ff6b6b;
+    padding-bottom: 5px;
+}
+
+p {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    background-color: #ffeb3b;
+    padding: 3px 6px;
+    border-radius: 3px;
+}
+
+/* Buttons */
+.button {
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.button:hover {
+    background-color: #ee5a24;
+}
+
+.button:active {
+    transform: translateY(2px);
+}
+
+/* Color Examples */
+.named-colors {
+    background-color: lightblue;
+    color: darkblue;
+    border: 2px solid navy;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.hex-colors {
+    background-color: #ff6b6b;
+    color: #ffffff;
+    border: 2px solid #ee5a24;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.rgb-colors {
+    background-color: rgb(106, 127, 234);
+    color: white;
+    border: 2px solid rgb(70, 90, 200);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.rgba-colors {
+    background-color: rgba(255, 107, 107, 0.7);
+    color: rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(238, 90, 36, 0.9);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.hsl-colors {
+    background-color: hsl(270, 60%, 70%);
+    color: hsl(0, 0%, 20%);
+    border: 2px solid hsl(270, 60%, 50%);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.hsla-colors {
+    background-color: hsla(120, 100%, 50%, 0.6);
+    color: hsla(0, 0%, 0%, 0.9);
+    border: 2px solid hsla(120, 100%, 30%, 0.8);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.gradient-example {
+    background: linear-gradient(135deg, #ff6b6b, #ee5a24, #333);
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Borders and shapes */
+.solid-border {
+    border: 3px solid #667eea;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 6px;
+}
+
+.rounded-box {
+    border: 3px solid #ff6b6b;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.circle-box {
+    border: 3px solid #ee5a24;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.complex-border {
+    border: 5px solid;
+    border-image: linear-gradient(135deg, #ff6b6b, #ee5a24) 1;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+/* Background Example */
+.cover-bg {
+    background-image: url("https://via.placeholder.com/300x200/667eea/ffffff?text=Background");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* Quote Example with pseudo-elements */
+.quote {
+    position: relative;
+    font-style: italic;
+    padding: 20px;
+    margin: 15px 0;
+    background: #fafafa;
+    border-left: 4px solid #ff6b6b;
+}
+
+.quote::before {
+    content: "❝";
+    font-size: 2em;
+    color: #ff6b6b;
+    position: absolute;
+    left: 10px;
+    top: -5px;
+}
+
+.quote::after {
+    content: "❞";
+    font-size: 2em;
+    color: #ff6b6b;
+    position: absolute;
+    right: 10px;
+    bottom: -5px;
+}
+</head>
+<body>
+<div id="main-content">
+        <h1>CSS Demopage</h1>
+        <p>This page shows different <span class="highlight">CSS selectors</span> and styles.</p>
+
+        <button class="button">Hover Me</button>
+        <button class="button">Click Me</button>
+
+        <h2>Color Examples</h2>
+        <div class="named-colors">Named colors</div>
+        <div class="hex-colors">Hexadecimal colors</div>
+        <div class="rgb-colors">RGB colors</div>
+        <div class="rgba-colors">RGBA colors</div>
+        <div class="hsl-colors">HSL colors</div>
+        <div class="hsla-colors">HSLA colors</div>
+        <div class="gradient-example">Linear Gradient</div>
+
+        <h2>Border & Shape Examples</h2>
+        <div class="solid-border">Solid Border</div>
+        <div class="rounded-box">Rounded Corners</div>
+        <div class="circle-box">Circle</div>
+        <div class="complex-border">Complex Gradient Border</div>
+
+        <h2>Background Example</h2>
+        <div class="cover-bg">Background Cover Example</div>
+
+        <h2>Quote Example</h2>
+        <p class="quote">This is styled using pseudo-elements (::before and ::after).</p>
+    </div>
+
+</body>
+</html>

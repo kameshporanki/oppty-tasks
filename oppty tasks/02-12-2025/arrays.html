@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<div lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="arrays.css">
+    <title>JS Array Examples</title>
+    
+</head>
+<body>
+
+<h2>JavaScript Array Examples</h2>
+
+<!-- 1. Array Methods -->
+<div class="box">
+    <h3>1. JS Array Methods</h3>
+    <pre id="methodsOutput"></pre>
+</div>
+
+<!-- 2. Array Search -->
+<div class="box">
+    <h3>2. JS Array Search</h3>
+    <pre id="searchOutput"></pre>
+</div>
+
+<!-- 3. Array Sort -->
+<div class="box">
+    <h3>3. JS Array Sort</h3>
+    <pre id="sortOutput"></pre>
+</div>
+
+<!-- 4. Array Iterations -->
+<div class="box">
+    <h3>4. JS Array Iterations</h3>
+    <pre id="iterationOutput"></pre>
+</div>
+
+<!-- 5. Array Reference -->
+<div class="box">
+    <h3>5. JS Array Reference</h3>
+    <pre id="refOutput"></pre>
+</div>
+
+<!-- 6. Array Const -->
+<div class="box">
+    <h3>6. JS Array Const</h3>
+    <pre id="constOutput"></pre>
+</div>
+
+
+<script>
+
+// 1. ARRAY METHODS
+let sports = ["cricket", "hockey", "football"];
+sports.push("golf","baseball");
+sports.pop();
+sports.unshift();
+sports.shift();
+document.getElementById("methodsOutput").textContent ="sports Array: " + sports;
+
+
+
+// 2. ARRAY SEARCH
+let numbers = [10, 20, 30, 40, 50];
+let searchText =
+    "Index of 30: " + numbers.indexOf(30) +
+    "\nIncludes 60? " + numbers.includes(60) +
+    "\nFind >25: " + numbers.find(n => n > 25);
+document.getElementById("searchOutput").textContent = searchText;
+
+
+// 3. ARRAY SORT
+let names = ["Kamesh", "Ravi", "Anil", "Sita", "Balu","Geetha"];
+let sortedNames = names.sort();
+
+let nums = [20, 5, 100, 40, 70];
+let sortedNums = nums.sort((a, b) => a - b);
+
+document.getElementById("sortOutput").textContent =
+    "Sorted Names: " + sortedNames +
+    "\nSorted Numbers: " + sortedNums;
+
+
+// 4. ARRAY ITERATION
+let marks = [45, 75, 89];
+let iterText = "";
+
+marks.forEach(m => iterText += "forEach: " + m + "\n");
+marks.map(m => m * 2).forEach(m => iterText += "map doubled: " + m + "\n");
+
+for (let i = 0; i < marks.length; i++) {
+    iterText += "for loop → Index: " + i + ", Value: " + marks[i] + "\n";
+}
+
+document.getElementById("iterationOutput").textContent = iterText;
+
+
+// 5. ARRAY REFERENCE
+let a = ["x", "y"];
+let b = a;
+b.push("q");
+document.getElementById("refOutput").textContent =
+    "Array A: " + a + "\nArray B: " + b;
+
+
+// 6. ARRAY CONST
+const colors = ["Red", "Green"];
+colors.push("Black");
+document.getElementById("constOutput").textContent =
+    "Colors (const): " + colors + "\nNote: const array values can change!";
+
+</script>
+
+</body>
+</html>
