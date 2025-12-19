@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Typing Test</title>
+</head>
+<body>
+
+<h1>Typing Test</h1>
+
+<h2 id="timer">Time Left: 120s</h2>
+
+<div id="testParagraph">The quick brown fox jumps over the lazy dog.</div>
+
+<input type="text" id="inputBox" placeholder="Start typing here..." />
+
+<br><br>
+
+<button id="submitBtn">Submit</button>
+<button id="resetBtn">Reset</button>
+
+<div id="result"></div>
+
+<script>
+  const testParagraph = document.getElementById('testParagraph').innerText;
+  const inputBox = document.getElementById('inputBox');
+  const result = document.getElementById('result');
+  const submitBtn = document.getElementById('submitBtn');
+  const resetBtn = document.getElementById('resetBtn');
+  const timerDisplay = document.getElementById('timer');
+
+  let startTime = null;
+  let timer = null;
+  let timeLeft = 120;
+
+  
+  inputBox.addEventListener('focus', () => {
+    if (!startTime) {
+      startTime = new Date();
+      startCountdown();
+    }
+  });
+
+  function startCountdown() {
+    timer = setInterval(() => {
+      timeLeft--;
+      timerDisplay.innerText = `Time Left: ${timeLeft}s`;
+
+      if (timeLeft <= 0) {
+        clearInterval(timer);
+        inputBox.disabled = true;
+        submitResults();
+      }
+    }, 1000);
+  }
+
+ 
+  function submitResults() {
+    const typedText = inputBox.value;
+    const endTime = new Date();
+
+    const timeTaken = (endTime - startTime) / 1000;
+
+    const words = typedText.trim().split(" ").length;
+    const wpm = (words / timeTaken) * 60;
+
+    let correctChars = 0;
+    for (let i = 0; i < typedText.length; i++) {
+      if (typedText[i] === testParagraph[i]) {
+        correctChars++;
+      }
+    }
+
+    let accuracy = (correctChars / testParagraph.length) * 100;
+
+    result.innerHTML = `
+      <strong>Result:</strong><br>
+      Time Taken: ${timeTaken.toFixed(2)} seconds<br>
+      Words Typed: ${words}<br>
+      WPM: ${wpm.toFixed(2)}<br>
+      Accuracy: ${accuracy.toFixed(2)}%
+    `;
+  }
+
+  
+  submitBtn.addEventListener('click', () => {
+    clearInterval(timer);
+    inputBox.disabled = true;
+    submitResults();
+  });
+
+  
+  resetBtn.addEventListener('click', () => {
+    inputBox.value = "";
+    inputBox.disabled = false;
+    result.innerHTML = "";
+    timerDisplay.innerText = "Time Left: 120s";
+
+    startTime = null;
+    timeLeft = 120;
+    clearInterval(timer);
+  });
+</script>
+
+</body>
+</html>
